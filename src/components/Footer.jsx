@@ -26,9 +26,9 @@ export default function Footer() {
             <a href={footer.social.linkedin} target='_blank' className="p-2 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full hover:bg-blue-700 hover:text-white dark:hover:bg-blue-700 dark:hover:text-white transition-all duration-300 hover:-translate-y-1">
               <Linkedin size={20} />
             </a>
-            <a href={footer.social.instagram} target='_blank' className="p-2 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 dark:hover:text-white transition-all duration-300 hover:-translate-y-1">
+            {/* <a href={footer.social.instagram} target='_blank' className="p-2 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 rounded-full hover:bg-pink-600 hover:text-white dark:hover:bg-pink-600 dark:hover:text-white transition-all duration-300 hover:-translate-y-1">
               <Instagram size={20} />
-            </a>
+            </a> */}
           </div>
         </div>
 
