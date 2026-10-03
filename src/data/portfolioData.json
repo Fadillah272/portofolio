@@ -1,6 +1,6 @@
 {
   "navbar": {
-    "logo": "IRFAN.",
+    "logo": "IRFAN",
     "links": [
       {
         "name": "About",
@@ -25,67 +25,182 @@
     ]
   },
   "hero": {
-    "greeting": "Hello, Welcome",
-    "name": "Irfan",
-    "role": "Frontend Developer",
-    "description": "I build interactive, responsive, and premium web interfaces. Passionate about delivering exceptional user experiences from concept to production.",
+    "greeting": "Hello, I'm",
+    "name": "Irfan Fadillah",
+    "role": "Full-Stack Software Engineer | Mobile & Backend",
+    "description": "Software Engineer with 3+ years of experience building cross-platform mobile applications with React Native, supported by scalable backend services using Spring Boot and Laravel. I focus on clean architecture, performance, and user-centered design.",
     "cta1": "View Projects",
-    "cta2": "Download CV",
-    "profileImage": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "cta2": "/pdf/Irfan Fadillah - CV.pdf",
+    "profileImage": "/images/Foto_profile.jpeg"
   },
   "about": {
     "title": "About Me",
-    "subtitle": "A Brief Overview",
+    "subtitle": "Full-Stack Software Engineer",
     "paragraphs": [
-      "Hello! I'm Irfan, a Frontend Developer based in Indonesia. I have a strong passion for creating web interfaces that not only function seamlessly but also deliver an engaging visual experience.",
-      "Over the past few years, I've immersed myself in the JavaScript ecosystem, specializing in React and Tailwind CSS. I continually strive to learn the latest technologies and apply them to solve real-world problems."
+      "I'm Irfan, a Full-Stack Software Engineer based in Indonesia with 3+ years of experience delivering mobile, web, and backend solutions across the banking, mining, and manufacturing industries. I specialize in cross-platform mobile applications with React Native, supported by robust backend services and REST APIs.",
+      "Working in security-sensitive and operations-heavy environments has taught me to prioritize reliability, security, and maintainability. In banking, I built mobile applications and Spring Boot microservices alongside QA and security teams on penetration testing, SAST, and DAST. In mining, I lead mobile development for internal corporate applications, and in manufacturing, I delivered a production management system and a recruitment portal.",
+      "I work across the full development lifecycle, from API design with Spring Boot and Laravel to responsive interfaces and releases on the Play Store, App Store, and AppGallery. My toolkit spans React Native, TypeScript, Java, PHP, and Golang, backed by solid experience with relational databases. I bring strong problem-solving skills, a collaborative mindset, and a commitment to high-quality, maintainable software."
     ],
     "stats": [
       {
         "value": "3+",
-        "label": "Years Experience"
+        "label": "Years of Professional Experience"
       },
       {
-        "value": "20+",
-        "label": "Projects Completed"
+        "value": "3",
+        "label": "App Stores Published"
       },
       {
         "value": "10+",
-        "label": "Satisfied Clients"
+        "label": "Languages & Frameworks"
       },
       {
-        "value": "100%",
-        "label": "Commitment"
+        "value": "3",
+        "label": "Industries Served"
       }
     ]
   },
   "skills": {
     "title": "Core Expertise",
-    "description": "The technologies and tools I leverage daily to turn ideas into reality.",
-    "list": [
+    "description": "The technologies and tools I use to build scalable mobile applications, web platforms, and backend systems.",
+    "categories": [
       {
-        "name": "React JS",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+        "name": "Programming Languages",
+        "list": [
+          {
+            "name": "JavaScript (ES6+)",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+          },
+          {
+            "name": "TypeScript",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+          },
+          {
+            "name": "Java",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+          },
+          {
+            "name": "PHP",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+          },
+          {
+            "name": "Golang",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg"
+          },
+          {
+            "name": "C#",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+          },
+          {
+            "name": "Kotlin",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg"
+          },
+          {
+            "name": "Swift",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg"
+          },
+          {
+            "name": "HTML / CSS",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+          }
+        ]
       },
       {
-        "name": "Tailwind CSS",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+        "name": "Frameworks & Libraries",
+        "list": [
+          {
+            "name": "React / React Native",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+          },
+          {
+            "name": "Spring Boot",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+          },
+          {
+            "name": "Laravel",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+          },
+          {
+            "name": "CodeIgniter",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/codeigniter/codeigniter-plain.svg"
+          },
+          {
+            "name": "Node.js",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+          },
+          {
+            "name": "Tailwind CSS",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+          }
+        ]
       },
       {
-        "name": "JavaScript (ES6+)",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        "name": "API & Integration",
+        "list": [
+          {
+            "name": "REST API",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+          },
+          {
+            "name": "GraphQL",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg"
+          }
+        ]
       },
       {
-        "name": "HTML / CSS",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        "name": "Databases",
+        "list": [
+          {
+            "name": "MySQL",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+          },
+          {
+            "name": "PostgreSQL",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+          },
+          {
+            "name": "Oracle Database",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+          },
+          {
+            "name": "IBM DB2",
+            "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg"
+          },
+          {
+            "name": "Microsoft SQL Server",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+          }
+        ]
       },
       {
-        "name": "TypeScript",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        "name": "DevOps & Tools",
+        "list": [
+          {
+            "name": "Git",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+          },
+          {
+            "name": "Docker",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+          }
+        ]
       },
       {
-        "name": "Node.js",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+        "name": "Mobile Release & Distribution",
+        "list": [
+          {
+            "name": "Google Play Store",
+            "icon": "https://api.iconify.design/logos:google-play-icon.svg"
+          },
+          {
+            "name": "Apple App Store",
+            "icon": "https://api.iconify.design/simple-icons:appstore.svg?color=%230D96F6"
+          },
+          {
+            "name": "Huawei AppGallery",
+            "icon": "https://api.iconify.design/simple-icons:huawei.svg?color=%23CF0A2C"
+          }
+        ]
       }
     ]
   },
@@ -96,109 +211,312 @@
         "title": "Senior Mobile Developer",
         "company": "PT. Kalimantan Prima Persada",
         "period": "April 2026 - Present",
-        "description": "Developing mobile applications for internal corporate needs, ensuring high performance and reliability."
+        "description": "Lead the development, architecture, and optimization of internal corporate mobile applications using React Native. Own the end-to-end build, release, and deployment process to the Play Store, App Store, and AppGallery. Collaborate with Backend and UI/UX teams to integrate REST APIs and translate wireframes into responsive, pixel-perfect mobile components.",
+        "tags": [
+          "React Native",
+          "Kotlin",
+          "Swift",
+          "TypeScript",
+          "REST API",
+          "GraphQL",
+          "Git"
+        ]
       },
       {
         "title": "Junior Programmer",
         "company": "PT. Bank Negara Indonesia (Persero) Tbk",
-        "period": "April 2024 - March 2026",
-        "description": "Developed specialized mobile applications using React Native and robust backend services using Spring Boot."
+        "period": "January 2024 - March 2026",
+        "description": "Developed mobile applications with React Native and integrated them with backend services. Designed and maintained REST APIs and microservices using Spring Boot. Worked with cross-functional and QA teams on penetration testing, SAST, and DAST to strengthen application security.",
+        "tags": [
+          "React Native",
+          "Spring Boot",
+          "Java",
+          "REST API",
+          "Oracle Database",
+          "Microservices",
+          "SAST/DAST"
+        ]
       },
       {
         "title": "IT Programmer",
         "company": "PT. Indo Taichen Textile",
-        "period": "January 2024 - March 2024",
-        "description": "Built internal web applications to streamline operations utilizing Laravel and MySQL."
+        "period": "June 2023 - December 2023",
+        "description": "Developed a job portal website and an internal production management system to streamline recruitment and operational workflows, using Laravel and CodeIgniter.",
+        "tags": [
+          "Laravel",
+          "CodeIgniter",
+          "PHP",
+          "MySQL",
+          "Web Development"
+        ]
       }
     ],
     "educationTitle": "Education",
     "education": [
       {
-        "title": "B.S. in Informatics Engineering",
-        "school": "Universitas Teknologi",
-        "period": "2016 - 2020",
-        "description": "Graduated Cum Laude. Focused on software engineering principles and user interface design."
-      },
-      {
-        "title": "Frontend Web Developer Course",
-        "school": "Dicoding Academy",
-        "period": "2019",
-        "description": "Completed certification program, securing first place in the final project submission competition."
+        "title": "Bachelor of Informatics Engineering",
+        "school": "Universitas Banten Jaya",
+        "period": "2019 - 2023",
+        "description": "Graduated with a GPA of 3.68. Focused on software engineering principles and application development.",
+        "tags": [
+          "Informatics Engineering",
+          "Software Engineering",
+          "GPA 3.68 / 4.00"
+        ]
       }
     ],
     "trainingTitle": "Trainings & Certifications",
     "trainings": [
       {
-        "title": "Advanced React Patterns",
-        "school": "Udemy",
-        "period": "2023",
-        "description": "Deep dive into advanced React concepts including Higher-Order Components, Render Props, and custom Hooks."
+        "title": "Training of Golang",
+        "school": "EnigmaCamp",
+        "period": "December 2023",
+        "description": "Intensive training on backend development fundamentals using Golang.",
+        "tags": [
+          "Golang",
+          "Backend"
+        ]
       },
       {
-        "title": "Fullstack Next.js Bootcamp",
-        "school": "BuildUI",
-        "period": "2022",
-        "description": "Comprehensive training on building production-ready applications using Next.js, Tailwind CSS, and Prisma."
+        "title": "Junior Web Developer",
+        "school": "BNSP",
+        "period": "Issued March 2023",
+        "description": "Nationally recognized professional competency certification in web development.",
+        "tags": [
+          "Web Development",
+          "Certification"
+        ]
+      },
+      {
+        "title": "Fullstack Web Developer",
+        "school": "Dicoding Academy",
+        "period": "Issued May 2022",
+        "description": "Completed a comprehensive learning path covering frontend and backend web development.",
+        "tags": [
+          "JavaScript",
+          "Fullstack",
+          "REST API"
+        ]
+      },
+      {
+        "title": "Front-End Developer Expert",
+        "school": "Dicoding Academy",
+        "period": "Issued May 2022",
+        "description": "Completed an advanced learning path in building modern, responsive, and accessible web interfaces.",
+        "tags": [
+          "HTML/CSS",
+          "JavaScript",
+          "Frontend"
+        ]
       }
     ]
   },
   "projects": {
     "title": "Featured Projects",
-    "description": "A selection of my best work demonstrating my ability to solve complex problems through clean code.",
+    "description": "A selection of mobile, web, and backend projects I have built, maintained, and shipped to production, alongside personal and freelance work.",
     "list": [
       {
-        "title": "E-Commerce Dashboard",
-        "description": "An interactive admin dashboard featuring real-time charts, advanced state management, and a sleek dark mode interface.",
-        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "title": "DIGIHC",
+        "subtitle": "Company Project",
+        "type": "company",
+        "description": "A full-stack mobile application delivered end to end. Built the user interface with React Native and developed the backend REST APIs with Spring Boot, covering feature design, integration, and security testing.",
+        "image": "/images/icon-digihc.png",
+        "tags": [
+          "React Native",
+          "Spring Boot",
+          "Java",
+          "REST API"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "MOK",
+        "subtitle": "Company Project",
+        "type": "company",
+        "description": "A cross-platform mobile application built with React Native. Responsible for feature development, ongoing maintenance, and managing production releases to the App Store and Google Play.",
+        "image": "/images/icon-mok.png",
+        "tags": [
+          "React Native",
+          "Maintenance",
+          "App Publishing"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "DFIT",
+        "subtitle": "Company Project",
+        "type": "company",
+        "description": "A native mobile application for Android and iOS, built with Kotlin and Swift. Handled development, maintenance, and store releases across both platforms.",
+        "image": "/images/icon-dfit.png",
+        "tags": [
+          "Kotlin",
+          "Swift",
+          "Android",
+          "iOS"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "Company Profile - PT. Indo Taichen Textile",
+        "subtitle": "Corporate Website",
+        "type": "company",
+        "description": "Corporate website that presents the company's profile, products, and services to a public audience. Built with Laravel as a clean, informative, and easy-to-maintain online presence.",
+        "image": "/images/icon-indotaichen.png",
+        "tags": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "Bootstrap"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "websiteUrl": "https://www.indotaichen.com/",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "Company Profile - PT. Bayan Punca Digital",
+        "subtitle": "Freelance Project",
+        "type": "freelance",
+        "description": "Company profile website for PT. Bayan Punca Digital that showcases the company's identity, products, and services. Built with Laravel as a responsive, professional, and easy-to-maintain online presence.",
+        "image": "/images/icon-bayan.png",
+        "tags": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "Bootstrap"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "websiteUrl": "https://bayanpd.com/",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "Bot-Wa-Mesin: Machine Maintenance System",
+        "subtitle": "Freelance Project",
+        "type": "freelance",
+        "description": "Web-based machine maintenance management system built with Laravel. Handles repair and maintenance scheduling and reporting, integrated with a WhatsApp bot so operators can report machine breakdowns directly from chat for faster response and better tracking.",
+        "image": "/images/icon-bot.png",
+        "tags": [
+          "Laravel",
+          "PHP",
+          "WhatsApp Bot",
+          "Maintenance Scheduling",
+          "Reporting"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "WED AI",
+        "subtitle": "Personal Project",
+        "type": "personal",
+        "description": "A personal full-stack web project built with React and Tailwind CSS on the frontend, supported by a Spring Boot backend. Designed as a hands-on exploration of modern web architecture and clean UI development.",
+        "image": "/images/icon-wedai.png",
         "tags": [
           "React",
           "Tailwind CSS",
-          "Recharts"
+          "Spring Boot"
         ],
-        "liveUrl": "#",
-        "githubUrl": "#"
+        "liveUrl": "",
+        "githubUrl": "https://github.com/Irfan272/WedAI.git",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
       },
       {
-        "title": "Travel & Tour Agency App",
-        "description": "A comprehensive holiday booking platform integrated with interactive maps, seamless page transitions, and advanced search filters.",
-        "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "title": "Shop Warehouse Management API",
+        "subtitle": "Backend Project",
+        "type": "personal",
+        "description": "RESTful API for managing a shop's warehouse inventory, built with Spring Boot 3 and Java 17. Covers categories, items, variants, stock, and sales, with atomic stock deduction, optimistic locking to prevent overselling, soft delete, and a stock movement audit trail. Documented with Swagger/OpenAPI.",
+        "image": "/images/default-backend.svg",
         "tags": [
-          "Next.js",
-          "Framer Motion",
-          "Mapbox"
+          "Spring Boot",
+          "Java",
+          "Spring Data JPA",
+          "PostgreSQL",
+          "REST API",
+          "Swagger"
         ],
-        "liveUrl": "#",
-        "githubUrl": "#"
+        "liveUrl": "",
+        "githubUrl": "https://github.com/Fadillah272/warehouse",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
       },
       {
-        "title": "Task Management System",
-        "description": "A collaborative productivity application featuring a Kanban board with intuitive drag-and-drop mechanics and real-time synchronization.",
-        "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "title": "Wedding Planner Microservices",
+        "subtitle": "Backend Project",
+        "type": "personal",
+        "description": "Microservices-based backend platform for managing wedding planning, covering authentication, wedding data, guest and RSVP management, digital invitation templates, invitations with unique links, and event timelines. Built with Spring Boot 3 and Java 17, using Eureka for service discovery, Spring Cloud Gateway as the API entry point, and JWT for secure access.",
+        "image": "/images/default-backend.svg",
         "tags": [
-          "React",
-          "Firebase",
-          "Zustand"
+          "Spring Boot",
+          "Java",
+          "Microservices",
+          "Spring Cloud Gateway",
+          "Eureka",
+          "PostgreSQL",
+          "JWT",
+          "Swagger"
         ],
-        "liveUrl": "#",
-        "githubUrl": "#"
+        "liveUrl": "",
+        "githubUrl": "https://github.com/Irfan272/BE-WEDDING-PLANNER.git",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
+      },
+      {
+        "title": "Financial Anak Kos API",
+        "subtitle": "Backend Project",
+        "type": "personal",
+        "description": "RESTful API for personal finance management, designed for students living in boarding houses. Built with Spring Boot and documented with Swagger UI to provide a clear, ready-to-integrate backend for finance tracking applications.",
+        "image": "/images/default-backend.svg",
+        "tags": [
+          "Spring Boot",
+          "Java",
+          "REST API",
+          "Swagger"
+        ],
+        "liveUrl": "",
+        "githubUrl": "https://github.com/Irfan272/Financial-Anak-Kos",
+        "websiteUrl": "",
+        "playStoreUrl": "",
+        "appStoreUrl": ""
       }
     ]
   },
   "contact": {
     "title": "Get In Touch",
-    "description": "Have a project idea or a question? Feel free to send a message. I typically respond within 24 hours.",
-    "email": "hello.irfan@email.com",
-    "phone": "+62 812 3456 7890",
+    "description": "Have a project in mind, an opportunity to discuss, or a question? Feel free to reach out. I typically respond within 24 hours.",
+    "email": "irfanfadillah272@gmail.com",
+    "phone": "+62 812 1480 5759",
     "location": "Jakarta, Indonesia"
   },
   "footer": {
-    "logo": "IRFAN.",
-    "description": "Building modern web experiences with creativity and a passion for problem-solving.",
-    "copyright": "Irfan. All rights reserved.",
+    "logo": "IRFAN",
+    "description": "Full-Stack Software Engineer building scalable mobile, web, and backend solutions.",
+    "copyright": "Irfan Fadillah. All rights reserved.",
     "social": {
-      "github": "#",
+      "github": "https://github.com/Irfan272",
       "twitter": "#",
-      "linkedin": "#",
+      "linkedin": "https://www.linkedin.com/in/irfan-fadillah-559997203/?skipRedirect=true",
       "instagram": "#"
     }
   }

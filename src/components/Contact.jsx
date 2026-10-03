@@ -1,9 +1,24 @@
+import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { motion } from 'framer-motion';
 import portfolioData from '../data/portfolioData.json';
 
 export default function Contact() {
   const { contact } = portfolioData;
+
+  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
+
+  const handleChange = (e) => {
+    setForm(prev => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, subject, message } = form;
+    const body = `Hi Irfan,\n\nMy name is ${name} (${email}).\n\n${message}`;
+    const mailtoUrl = `mailto:${contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoUrl;
+  };
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -21,14 +36,14 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white/50 dark:bg-gray-900/50 overflow-hidden">
+    <section id="contact" className="py-20 sm:py-24 bg-white/50 dark:bg-gray-900/50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
         >
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">{contact.title}</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full"></div>
@@ -37,42 +52,52 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-12">
           
           <motion.div 
             variants={fadeRight}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
-            className="lg:col-span-1 space-y-8"
+            className="lg:col-span-1 grid sm:grid-cols-3 lg:grid-cols-1 gap-4"
           >
-            <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-transform">
+            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-transform">
               <div className="p-3 bg-primary/10 rounded-full text-primary shrink-0">
                 <Mail size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-1">Email</h3>
-                <p className="text-gray-500 dark:text-gray-400">{contact.email}</p>
+                <h3 className="text-base sm:text-lg font-bold mb-1">Email</h3>
+                <p className="text-gray-500 dark:text-gray-400 text-sm break-all">{contact.email}</p>
               </div>
             </div>
             
-            <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-transform">
-              <div className="p-3 bg-green-500/10 rounded-full text-green-500 shrink-0">
+            <a
+              href={`https://wa.me/${contact.phone.replace(/\D/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:-translate-y-1 hover:border-green-300 dark:hover:border-green-700 hover:shadow-green-100 dark:hover:shadow-green-900/20 transition-all duration-300 group"
+            >
+              <div className="p-3 bg-green-500/10 rounded-full text-green-500 shrink-0 group-hover:bg-green-500/20 transition-colors">
                 <Phone size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-1">Phone (WhatsApp)</h3>
-                <p className="text-gray-500 dark:text-gray-400">{contact.phone}</p>
+                <h3 className="text-base sm:text-lg font-bold mb-1 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
+                  Phone (WhatsApp)
+                </h3>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">{contact.phone}</p>
+                <p className="text-xs text-green-600 dark:text-green-400 font-medium mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  Click to open WhatsApp →
+                </p>
               </div>
-            </div>
+            </a>
             
-            <div className="flex items-start gap-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-transform">
+            <div className="flex items-start gap-3 sm:gap-4 p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:-translate-y-1 transition-transform">
               <div className="p-3 bg-orange-500/10 rounded-full text-orange-500 shrink-0">
                 <MapPin size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-1">Location</h3>
-                <p className="text-gray-500 dark:text-gray-400">{contact.location}</p>
+                <h3 className="text-base sm:text-lg font-bold mb-1">Location</h3>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">{contact.location}</p>
               </div>
             </div>
           </motion.div>
@@ -82,16 +107,19 @@ export default function Contact() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-50px" }}
-            className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-8 relative overflow-hidden"
+            className="lg:col-span-2 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 p-5 sm:p-8 relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
-            <form className="space-y-6 relative z-10" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6 relative z-10" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Full Name</label>
                   <input 
                     type="text" 
-                    id="name" 
+                    id="name"
+                    required
+                    value={form.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                     placeholder="Enter your name"
                   />
@@ -100,7 +128,10 @@ export default function Contact() {
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
                   <input 
                     type="email" 
-                    id="email" 
+                    id="email"
+                    required
+                    value={form.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                     placeholder="nama@email.com"
                   />
@@ -110,7 +141,10 @@ export default function Contact() {
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
                 <input 
                   type="text" 
-                  id="subject" 
+                  id="subject"
+                  required
+                  value={form.subject}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                   placeholder="Topic of discussion"
                 />
@@ -118,8 +152,11 @@ export default function Contact() {
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
                 <textarea 
-                  id="message" 
-                  rows="4" 
+                  id="message"
+                  rows="4"
+                  required
+                  value={form.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
                   placeholder="Write your message here..."
                 ></textarea>
